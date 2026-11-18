@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Alice Uwamariya</title>
+   <link rel="stylesheet" href="style.css">
+    <style>
+        .about-wrap {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 50px;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .about-wrap img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(30,58,95,0.2);
+        }
+        .about-text p { margin-bottom: 18px; color: var(--muted); font-size: 1.05rem; }
+        .about-text h3 { margin: 25px 0 10px; }
+        .edu-item {
+            border-left: 4px solid var(--accent);
+            padding-left: 18px;
+            margin-bottom: 18px;
+        }
+        .edu-item h4 { color: var(--primary); margin-bottom: 4px; }
+        .edu-item span { font-size: 0.9rem; color: var(--accent); font-weight: 600; }
+        @media (max-width: 768px) {
+            .about-wrap { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Alice U.</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2 class="page-title">About Me</h2>
+        <div class="about-wrap">
+            <img src="images/alice-photo.jpg" alt="Alice Uwamariya">
+            <div class="about-text">
+                <p>
+                    I am a motivated <strong>Business Information Technology graduate</strong> from the
+                    University of Rwanda with a genuine passion for bridging business and technology.
+                    I believe that the best digital solutions are built by people who understand both
+                    the technical side and the human side of a problem.
+                </p>
+                <p>
+                    My journey started with a strong foundation in information systems and business
+                    processes. I later expanded my skills into <strong>frontend development</strong>,
+                    earning a professional certificate for building the World Star School Management
+                    System using React.js, Next.js, and Tailwind CSS. Today, I am also growing my
+                    expertise in <strong>cybersecurity</strong> to make the systems I build safer
+                    and more reliable.
+                </p>
+                <p>
+                    Beyond code, I am a strong communicator and fast learner. I enjoy working
+                    with people, understanding their needs, and turning those needs into
+                    practical technological solutions that create real value.
+                </p>
+
+                <h3>Education</h3>
+                <div class="edu-item">
+                    <h4>Bachelor of Business Information Technology</h4>
+                    <span>University of Rwanda · 2022 – 2025</span>
+                </div>
+                <div class="edu-item">
+                    <h4>Secondary Education (Mathematics-Economics-Geography)</h4>
+                    <span>E.S Stella Matutina, Rulindo · 2018 – 2021</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Alice Uwamariya. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

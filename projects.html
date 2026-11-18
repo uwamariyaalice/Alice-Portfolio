@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Alice Uwamariya</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(30,58,95,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(30,58,95,0.15);
+        }
+        .project-header {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: var(--white);
+            padding: 25px;
+        }
+        .project-header h3 { color: var(--white); margin-bottom: 5px; }
+        .project-header span { font-size: 0.85rem; opacity: 0.85; }
+        .project-body { padding: 25px; flex: 1; }
+        .project-body p { color: var(--muted); margin-bottom: 15px; }
+        .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; }
+        .project-tags span {
+            background: #eaf4fc;
+            color: var(--accent-dark);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .project-link {
+            color: var(--accent);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .project-link:hover { text-decoration: underline; }
+        .empty-note {
+            text-align: center;
+            color: var(--muted);
+            margin-top: 40px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Alice U.</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2 class="page-title">My Projects</h2>
+        <div class="grid-2">
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>World Star School Management System</h3>
+                    <span>Frontend Developer · GB&MA Ltd</span>
+                </div>
+                <div class="project-body">
+                    <p>
+                        Developed the complete frontend of a school management platform
+                        used to manage students, teachers, and academic records. Built a
+                        responsive UI/UX, integrated REST APIs, and optimized application
+                        performance for a smooth user experience.
+                    </p>
+                    <div class="project-tags">
+                        <span>React.js</span><span>Next.js</span><span>TypeScript</span>
+                        <span>Tailwind CSS</span><span>REST API</span>
+                    </div>
+                    <a href="https://worldstarschool.academy" target="_blank" class="project-link">
+                        View Live Site →
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Bid Writing Project</h3>
+                    <span>Business Analyst · GBMA Ltd</span>
+                </div>
+                <div class="project-body">
+                    <p>
+                        Assisted in researching, drafting, and preparing professional bid
+                        documents for technology contracts. Ensured alignment between client
+                        requirements, business value, and technical feasibility.
+                    </p>
+                    <div class="project-tags">
+                        <span>Business Writing</span><span>Communication</span>
+                        <span>Research</span>
+                    </div>
+                    <span class="project-link" style="color:var(--muted); cursor:default;">
+                        Internal Company Project
+                    </span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>GitHub Coding Projects</h3>
+                    <span>Personal Development</span>
+                </div>
+                <div class="project-body">
+                    <p>
+                        A growing collection of personal coding projects published on GitHub.
+                        Includes web experiments, HTML/CSS/JavaScript practice, and small
+                        applications built while expanding my frontend skills.
+                    </p>
+                    <div class="project-tags">
+                        <span>JavaScript</span><span>HTML</span><span>CSS</span>
+                        <span>Git</span>
+                    </div>
+                    <!-- ⚠️ REPLACE the URL below with your actual GitHub profile -->
+                    <a href="https://github.com/uwamariyaalice/Robotics-Training-Platform.git" target="_blank" class="project-link">
+                        View My GitHub →
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Network Configuration Lab</h3>
+                    <span>IT Intern · MANGO 4G</span>
+                </div>
+                <div class="project-body">
+                    <p>
+                        Practiced real-world network setup, IP configuration, and
+                        troubleshooting using Cisco Packet Tracer. Simulated client
+                        networks and resolved connectivity issues as part of IT operations
+                        support.
+                    </p>
+                    <div class="project-tags">
+                        <span>Cisco Packet Tracer</span><span>Networking</span>
+                        <span>Troubleshooting</span>
+                    </div>
+                    <span class="project-link" style="color:var(--muted); cursor:default;">
+                        Internship Project
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Alice Uwamariya. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

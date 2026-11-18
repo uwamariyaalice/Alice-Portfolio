@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Alice Uwamariya</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .timeline {
+            max-width: 850px;
+            margin: 0 auto;
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--accent), var(--primary));
+            border-radius: 2px;
+        }
+        .timeline-item {
+            background: var(--white);
+            padding: 25px 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            position: relative;
+            box-shadow: 0 5px 20px rgba(30,58,95,0.08);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -41px;
+            top: 28px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 4px solid var(--white);
+            box-shadow: 0 0 0 3px var(--accent);
+        }
+        .timeline-item h3 { margin-bottom: 4px; }
+        .timeline-item .company {
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 6px;
+            display: block;
+        }
+        .timeline-item .date {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .timeline-item ul { padding-left: 20px; }
+        .timeline-item ul li {
+            color: var(--muted);
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Alice U.</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2 class="page-title">Work Experience</h2>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>Marketing & Sales Associate</h3>
+                <span class="company">GBMA Ltd · Kigali, Rwanda</span>
+                <span class="date">September 2026 – Present</span>
+                <ul>
+                    <li>Identify customer needs and business challenges to propose tailored solutions.</li>
+                    <li>Present company technology solutions to potential clients and decision makers.</li>
+                    <li>Develop strong communication, negotiation, and long-term customer relationship skills.</li>
+                    <li>Support bid writing and proposal preparation for technology contracts.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Frontend Developer (Certified Project Role)</h3>
+                <span class="company">GB&MA Ltd · World Star School Management System</span>
+                <span class="date">Completed May 2025</span>
+                <ul>
+                    <li>Built the full frontend of a school management system using React.js and Next.js.</li>
+                    <li>Implemented responsive UI/UX design with Tailwind CSS.</li>
+                    <li>Integrated REST APIs and managed application state efficiently.</li>
+                    <li>Optimized application performance and applied modern frontend engineering practices.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3>IT Intern</h3>
+                <span class="company">MANGO 4G · Kigali, Rwanda</span>
+                <span class="date">Internship</span>
+                <ul>
+                    <li>Practiced network configuration and troubleshooting using Cisco Packet Tracer.</li>
+                    <li>Supported daily IT operations and resolved basic technical issues for clients.</li>
+                    <li>Analyzed business processes and identified areas for system improvement.</li>
+                    <li>Gained hands-on experience in IT systems and client network management.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Alice Uwamariya. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
