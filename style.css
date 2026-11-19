@@ -137,3 +137,104 @@ footer {
     section { padding: 50px 6%; }
     h2.page-title { font-size: 2rem; }
 }
+/* =========================================
+   MOBILE & TABLET RESPONSIVENESS
+========================================= */
+
+@media (max-width: 900px) {
+    /* Adjust Navigation for Mobile */
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 15px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Adjust the Hero/Home Section to stack vertically */
+    #hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 5%;
+        min-height: auto;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 2.4rem; /* Smaller title on phones */
+    }
+
+    .hero-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 20px;
+    }
+
+    /* Make buttons fill the width on mobile for easy tapping */
+    .hero-text .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        margin-left: 0 !important; /* Overrides inline margin */
+    }
+
+    /* Adjust Sections */
+    section {
+        padding: 50px 5%;
+    }
+
+    h2.page-title {
+        font-size: 2rem;
+    }
+
+    /* Adjust the About Page Grid */
+    .about-wrap {
+        grid-template-columns: 1fr; /* Stacks image on top of text */
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .about-wrap img {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .edu-item {
+        text-align: left; /* Keeps education list neat */
+    }
+
+    /* Adjust the Timeline on Experience Page */
+    .timeline {
+        padding-left: 20px;
+    }
+    .timeline::before {
+        left: 0;
+    }
+    .timeline-item {
+        padding: 20px;
+    }
+    .timeline-item::before {
+        left: -29px;
+        width: 14px;
+        height: 14px;
+    }
+    
+    /* Adjust the Contact Page */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .reference-box {
+        padding: 20px;
+    }
+}
