@@ -6,61 +6,20 @@
     <title>Contact | Alice Uwamariya</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .intro-text {
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto 50px;
-            color: var(--muted);
-            font-size: 1.1rem;
-        }
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 30px;
-            max-width: 950px;
-            margin: 0 auto;
-        }
-        .contact-card {
-            background: var(--white);
-            padding: 35px 25px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(30,58,95,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .contact-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 15px 35px rgba(30,58,95,0.15);
-        }
-        .contact-card .icon {
-            font-size: 2rem;
-            margin-bottom: 15px;
-        }
-        .contact-card h3 { margin-bottom: 10px; }
-        .contact-card a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 600;
-            word-break: break-word;
-        }
-        .contact-card a:hover { text-decoration: underline; }
-        .reference-box {
-            max-width: 900px;
-            margin: 60px auto 0;
-            background: var(--white);
-            padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(30,58,95,0.08);
-        }
-        .reference-box h3 { text-align: center; margin-bottom: 25px; }
+        .intro-text { text-align: center; max-width: 600px; margin: 0 auto 50px; color: var(--text-muted); font-size: 1.1rem; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; max-width: 950px; margin: 0 auto; }
+        .contact-card { background: var(--navy-light); padding: 35px 25px; border-radius: 8px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.3); transition: transform 0.3s; border: 1px solid rgba(255,255,255,0.05); }
+        .contact-card:hover { transform: translateY(-6px); border-color: rgba(212,175,55,0.3); }
+        .contact-card .icon { font-size: 2rem; margin-bottom: 15px; }
+        .contact-card h3 { margin-bottom: 10px; color: var(--gold-primary); }
+        .contact-card a { color: var(--text-main); text-decoration: none; font-weight: 600; word-break: break-word; }
+        .contact-card a:hover { color: var(--gold-light); text-decoration: underline; }
+        .reference-box { max-width: 900px; margin: 60px auto 0; background: var(--navy-light); padding: 35px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); box-shadow: 0 5px 20px rgba(0,0,0,0.3); }
+        .reference-box h3 { text-align: center; margin-bottom: 25px; color: var(--gold-primary); }
         .reference-box ul { list-style: none; }
-        .reference-box ul li {
-            padding: 12px 0;
-            border-bottom: 1px solid #eee;
-            color: var(--muted);
-        }
+        .reference-box ul li { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--text-muted); }
         .reference-box ul li:last-child { border-bottom: none; }
-        .reference-box ul li strong { color: var(--primary); }
+        .reference-box ul li strong { color: var(--text-main); }
     </style>
 </head>
 <body>
@@ -74,7 +33,7 @@
             <li><a href="projects.html">Projects</a></li>
             <li><a href="experience.html">Experience</a></li>
             <li><a href="certificates.html">Certificates</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
     </nav>
 
@@ -95,30 +54,26 @@
             <div class="contact-card">
                 <div class="icon">✉️</div>
                 <h3>Email</h3>
-                <a href="mailto:uwamariyaalice644@gmail.com">
-                    uwamariyaalice644@gmail.com
-                </a>
+                <a href="mailto:uwamariyaalice644@gmail.com">uwamariyaalice644@gmail.com</a>
             </div>
             <div class="contact-card">
                 <div class="icon">💼</div>
                 <h3>LinkedIn</h3>
-                <!-- REPLACE with your full LinkedIn URL -->
-                <a href="https://www.linkedin.com/in/uwamariya-alice-3a655b364/" target="_blank">
-                    Uwamariya Alice
-                </a>
+                <!-- Replace with your exact LinkedIn URL -->
+                <a href="https://www.linkedin.com/in/uwamariya-alice" target="_blank">Uwamariya Alice</a>
             </div>
             <div class="contact-card">
                 <div class="icon">📍</div>
                 <h3>Location</h3>
-                <span style="color:var(--muted); font-weight:600;">Kigali, Rwanda</span>
+                <span style="color:var(--text-muted); font-weight:600;">Kigali, Rwanda</span>
             </div>
         </div>
 
-    
+
     <footer>
         <p>&copy; 2025 Alice Uwamariya. All Rights Reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
