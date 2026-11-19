@@ -203,48 +203,54 @@ footer {
 }
 
 /* =========================================
-   MOBILE & TABLET RESPONSIVENESS
+   MOBILE & TABLET RESPONSIVENESS (HAMBURGER)
 ========================================= */
-
 @media (max-width: 900px) {
+    /* Make navbar a row so Logo and Button sit side-by-side */
     nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 5%;
+    }
+
+    /* Style the Hamburger Button */
+    .menu-toggle {
+        display: block;
+        font-size: 1.8rem;
+        color: var(--gold-primary);
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Hide the menu by default on mobile */
+    nav ul {
+        display: none;
         flex-direction: column;
-        padding: 1rem;
-        gap: 15px;
-    }
-    
-        nav ul {
-        flex-wrap: nowrap; /* Forces it to stay on one line */
-        justify-content: center;
-        gap: 10px; /* Smaller gap */
         width: 100%;
-    }
-    
-    nav ul li a {
-        font-size: 0.8rem; /* Makes the text a bit smaller */
-    }
-
-    section {
-        padding: 60px 5%;
-        min-height: auto;
+        text-align: center;
+        background-color: var(--navy-light);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 20px 0;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.5);
     }
 
-    h2.page-title {
-        font-size: 2rem;
+    /* This class will be added by JavaScript to show the menu */
+    nav ul.show {
+        display: flex;
     }
+
+    nav ul li { margin: 10px 0; }
+    nav ul li a { font-size: 1.1rem; }
+
+    section { padding: 60px 5%; min-height: auto; }
+    h2.page-title { font-size: 2rem; }
 
     /* About Page */
-    .about-wrap {
-        grid-template-columns: 1fr !important;
-        text-align: center;
-        gap: 30px;
-    }
-    
-    .about-wrap img {
-        max-width: 250px;
-        margin: 0 auto;
-    }
-
+    .about-wrap { grid-template-columns: 1fr !important; text-align: center; gap: 30px; }
+    .about-wrap img { max-width: 250px; margin: 0 auto; }
     .edu-item { text-align: left; }
 
     /* Experience Page */
@@ -254,10 +260,6 @@ footer {
     .timeline-item::before { left: -29px; width: 14px; height: 14px; }
     
     /* Contact Page */
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-    .reference-box {
-        padding: 20px;
-    }
+    .contact-grid { grid-template-columns: 1fr; }
+    .reference-box { padding: 20px; }
 }
