@@ -4,33 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | Alice Uwamariya</title>
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <style>
-        .about-wrap {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 50px;
-            align-items: center;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        .about-wrap img {
-            width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(30,58,95,0.2);
-        }
-        .about-text p { margin-bottom: 18px; color: var(--muted); font-size: 1.05rem; }
-        .about-text h3 { margin: 25px 0 10px; }
-        .edu-item {
-            border-left: 4px solid var(--accent);
-            padding-left: 18px;
-            margin-bottom: 18px;
-        }
-        .edu-item h4 { color: var(--primary); margin-bottom: 4px; }
-        .edu-item span { font-size: 0.9rem; color: var(--accent); font-weight: 600; }
-        @media (max-width: 768px) {
-            .about-wrap { grid-template-columns: 1fr; }
-        }
+        .about-wrap { display: grid; grid-template-columns: 1fr 2fr; gap: 50px; align-items: center; max-width: 1000px; margin: 0 auto; }
+        .about-wrap img { width: 100%; border-radius: 8px; border: 2px solid var(--gold-primary); box-shadow: 0 10px 30px rgba(212,175,55,0.15); }
+        .about-text p { margin-bottom: 18px; color: var(--text-muted); font-size: 1.05rem; }
+        .about-text h3 { margin: 25px 0 10px; color: var(--gold-primary); }
+        .edu-item { border-left: 4px solid var(--gold-primary); padding-left: 18px; margin-bottom: 18px; }
+        .edu-item h4 { color: var(--text-main); margin-bottom: 4px; }
+        .edu-item span { font-size: 0.9rem; color: var(--gold-light); font-weight: 600; }
     </style>
 </head>
 <body>
@@ -39,7 +21,7 @@
         <a href="index.html" class="logo">Alice U.</a>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html" class="active">About</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="experience.html">Experience</a></li>
@@ -72,7 +54,6 @@
                     with people, understanding their needs, and turning those needs into
                     practical technological solutions that create real value.
                 </p>
-
                 <h3>Education</h3>
                 <div class="edu-item">
                     <h4>Bachelor of Business Information Technology</h4>
@@ -90,6 +71,6 @@
         <p>&copy; 2025 Alice Uwamariya. All Rights Reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
