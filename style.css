@@ -213,10 +213,15 @@ footer {
         gap: 15px;
     }
     
-    nav ul {
-        flex-wrap: wrap;
+        nav ul {
+        flex-wrap: nowrap; /* Forces it to stay on one line */
         justify-content: center;
-        gap: 15px;
+        gap: 10px; /* Smaller gap */
+        width: 100%;
+    }
+    
+    nav ul li a {
+        font-size: 0.8rem; /* Makes the text a bit smaller */
     }
 
     section {
